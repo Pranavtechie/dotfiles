@@ -2,13 +2,13 @@
   description = "Pranav's Darwin System Flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
-    nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
   let
     configuration = { pkgs, config, ... }: {
 
@@ -18,18 +18,18 @@
 
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [ pkgs.neovim
-	  pkgs.mkalias
-	  pkgs.obsidian
-	  pkgs.tmux
-	  pkgs.arc-browser
-	  pkgs.qbittorrent
-	  pkgs.brave
-	  pkgs.stow
-	  pkgs.uv
-	  pkgs.tree
-	  pkgs.gh
+      environment.systemPackages = with pkgs; [ 
+	  neovim
+	  mkalias
+	  obsidian
+	  tmux
+	  arc-browser
+	  qbittorrent
+	  brave
+	  stow
+	  uv
+	  tree
+	  gh
         ];
 
       nix.enable = false;
@@ -42,6 +42,12 @@
 	brews = [
 		"mas"
 		"nvm"
+		"bun"
+	];
+	
+	taps = [
+	    "oven-sh/homebrew-bun" 
+	    "nikitabobko/homebrew-tap" 
 	];
 
 	casks = [
@@ -52,12 +58,14 @@
 		"activitywatch"
 		"karabiner-elements"
 		"zed"
+		"maccy"
+		"aerospace"
 	];
 	
 	masApps = {
 		"WhatsApp" = 310633997;
 	};
-
+	
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
 	onActivation.upgrade = true;
@@ -66,12 +74,13 @@
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
 
-      fonts.packages = with pkgs; [
-  	(nerdfonts.override { fonts = [ "Recursive" ]; })
+      fonts.packages = [
+	  pkgs.nerd-fonts.recursive-mono
       ];
 
       system.defaults = {
 	dock.autohide = true;
+	NSGlobalDomain."com.apple.swipescrolldirection" = false;
       };
 
       # Used for backwards compatibility, please read the changelog before changing.
