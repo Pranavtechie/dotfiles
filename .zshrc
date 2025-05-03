@@ -4,3 +4,9 @@
 
     export NIX_PATH="~/.config/nix/"
     export NIX_DARWIN_FLAKE="~/.config/nix/"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/pranav/.lmstudio/bin"
+# End of LM Studio CLI section
+
+eval "$(atuin init zsh)"

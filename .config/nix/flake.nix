@@ -13,12 +13,12 @@
     configuration = { pkgs, config, ... }: {
 
 
-      nixpkgs.config.allowUnfree = true; 
+      nixpkgs.config.allowUnfree = true;
       nixpkgs.config.allowBroken = true;
 
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages = with pkgs; [ 
+      environment.systemPackages = with pkgs; [
 	  neovim
 	  mkalias
 	  obsidian
@@ -36,53 +36,64 @@
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
 
-      homebrew = {
-	enable = true;
-	
-	brews = [
-		"mas"
-		"nvm"
-		"bun"
-	];
-	
-	taps = [
-	    "oven-sh/homebrew-bun" 
-	    "nikitabobko/homebrew-tap" 
-	];
+    homebrew = {
+	    enable = true;
 
-	casks = [
-		"ghostty"
-		"the-unarchiver"
-		"iina"
-		"raycast"
-		"activitywatch"
-		"karabiner-elements"
-		"zed"
-		"maccy"
-		"aerospace"
-	];
-	
-	masApps = {
-		"WhatsApp" = 310633997;
-	};
-	
-	onActivation.cleanup = "zap";
-	onActivation.autoUpdate = true;
-	onActivation.upgrade = true;
-      };
+    	brews = [
+	    "mas"
+	    "nvm"
+	    "bun"
+	    "atuin"
+    	];
 
-      # Set Git commit hash for darwin-version.
-      system.configurationRevision = self.rev or self.dirtyRev or null;
+    	taps = [
+    	    "oven-sh/homebrew-bun"
+    	    "nikitabobko/homebrew-tap"
+	    "mhaeuser/mhaeuser"
 
-      fonts.packages = [
-	  pkgs.nerd-fonts.recursive-mono
-      ];
+    	];
 
-      system.defaults = {
-	dock.autohide = true;
-	NSGlobalDomain."com.apple.swipescrolldirection" = false;
-      };
+    	casks = [
+    		"ghostty"
+    		"the-unarchiver"
+    		"iina"
+    		"raycast"
+    		"activitywatch"
+    		"zed"
+    		"maccy"
+    		"aerospace"
+    		"flux"
+		"netnewswire"
+		"lm-studio"
+		"battery-toolkit"
+		"jordanbaird-ice"
+    	];
 
+    	masApps = {
+    	    "WhatsApp" = 310633997;
+	    "Keynote" = 409183694;
+	    "Pages" = 409201541;
+	    "Numbers" = 409203825;
+    	};
+
+    	onActivation.cleanup = "zap";
+    	onActivation.autoUpdate = true;
+    	onActivation.upgrade = true;
+    };
+
+    # Set Git commit hash for darwin-version.
+    system.configurationRevision = self.rev or self.dirtyRev or null;
+
+    fonts.packages = [
+    pkgs.nerd-fonts.recursive-mono
+    ];
+
+    system.defaults = {
+	  dock.autohide = true;
+	  NSGlobalDomain."com.apple.swipescrolldirection" = false;
+	  NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
+    };
+    
       # Used for backwards compatibility, please read the changelog before changing.
       # $ darwin-rebuild changelog
       system.stateVersion = 5;
@@ -115,7 +126,7 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#Pranavs-MacBook-Pro
     darwinConfigurations."Pranavs-MacBook-Pro" = nix-darwin.lib.darwinSystem {
-      modules = [ 
+      modules = [
       configuration
       nix-homebrew.darwinModules.nix-homebrew
       {
