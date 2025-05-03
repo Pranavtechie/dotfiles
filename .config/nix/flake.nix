@@ -10,7 +10,7 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
   let
-    configuration = { pkgs, config, ... }: {
+    configuration = { pkgs, config, programs,  ... }: {
 
 
       nixpkgs.config.allowUnfree = true;
@@ -79,6 +79,14 @@
     	onActivation.cleanup = "zap";
     	onActivation.autoUpdate = true;
     	onActivation.upgrade = true;
+    };
+
+    programs.zsh = {
+      enable = true; 
+      ohMyZsh = {
+	enable = true;
+	plugins = [ "git" "dirhistory" ];
+      };
     };
 
     # Set Git commit hash for darwin-version.
