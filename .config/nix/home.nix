@@ -1,15 +1,21 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   # Home Manager needs information about you
   home.username = "pranav";
-  home.homeDirectory = "/Users/pranav";
+  home.homeDirectory = lib.mkForce "/Users/pranav";
   home.stateVersion = "23.11";
+  
+  # Set environment variables
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+  };
 
   # Configure zsh with oh-my-zsh
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
     
@@ -26,8 +32,25 @@
       ];
     };
     
-    initExtra = ''
-      # Custom zsh configuration can go here
+    initContent = ''
+      # Set up NVM
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+      [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+      # Nix configuration paths
+      export NIX_PATH="~/.config/nix/"
+      export NIX_DARWIN_FLAKE="~/.config/nix/"
+
+      # LM Studio CLI
+      export PATH="$PATH:/Users/pranav/.lmstudio/bin"
+
+      # Initialize atuin for shell history
+      eval "$(atuin init zsh)"
+
+      # Customize Agnoster theme to hide username@hostname
+      # Override the prompt_context function to do nothing
+      prompt_context() {}
     '';
   };
 

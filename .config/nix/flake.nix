@@ -102,7 +102,17 @@
       ];
 
       system.defaults = {
-        dock.autohide = true;
+        dock = {
+          autohide = true;
+          mineffect = "scale"; # "scale" for immediate animation instead of "genie"
+          static-only = false; 
+          show-recents = false; # Don't show recent applications
+          persistent-apps = [
+            "/nix/store/hkxhg9dj03jh086mciim604fksakczjb-obsidian-1.8.10/Applications/Obsidian.app"
+            "/System/Applications/Reminders.app"
+          ];
+          orientation = "bottom";
+        };
         NSGlobalDomain."com.apple.swipescrolldirection" = false;
         NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
       };
@@ -158,6 +168,7 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.${username} = import ./home.nix;
+            backupFileExtension = "backup";
           };
         }
       ];
