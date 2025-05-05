@@ -49,6 +49,14 @@ If you experience any errors while trying to install kickstart, run `:checkhealt
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- NOTE: Setting this function for proper link navigating in "man" pages
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'man',
+  callback = function()
+    vim.opt_local.iskeyword = '@-@,:,a-z,A-Z,48-57,_,.,-,(,)'
+  end,
+})
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 

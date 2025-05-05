@@ -35,7 +35,6 @@
         mkalias
         obsidian
         tmux
-        arc-browser
         qbittorrent
         stow
         uv
@@ -79,6 +78,8 @@
           "jordanbaird-ice"
           "brave-browser"
           "karabiner-elements"
+          "arc"
+          "stats"
         ];
 
         masApps = {

@@ -47,6 +47,9 @@
 
       # Initialize atuin for shell history
       eval "$(atuin init zsh)"
+      
+      # https://www.visualmode.dev/a-better-man-page-viewer - set nvim for man pages
+      export MANPAGER='nvim +Man!'
 
       # Customize Agnoster theme to hide username@hostname
       # Override the prompt_context function to do nothing
