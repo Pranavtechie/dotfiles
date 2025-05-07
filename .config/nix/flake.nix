@@ -54,6 +54,7 @@
           "nvm"
           "bun"
           "atuin"
+          "exiftool"
         ];
 
         taps = [
@@ -80,6 +81,8 @@
           "karabiner-elements"
           "arc"
           "stats"
+          "dbeaver-community"
+          "postgres-unofficial"
         ];
 
         masApps = {
