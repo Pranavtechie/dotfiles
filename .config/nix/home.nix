@@ -51,6 +51,14 @@
       # https://www.visualmode.dev/a-better-man-page-viewer - set nvim for man pages
       export MANPAGER='nvim +Man!'
 
+      # make psql available of postgresapp.com 
+      export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+
+      export PGUSER=postgres
+      export PGDATABASE=postgres
+
+      export PATH="/Users/pranav/.bun/bin:$PATH"
+
       # Customize Agnoster theme to hide username@hostname
       # Override the prompt_context function to do nothing
       prompt_context() {}

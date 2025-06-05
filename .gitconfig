@@ -2,3 +2,6 @@
 [user]
 	name = Pranav Mandava
 	email = pranav.techiegeek@gmail.com
+
+[alias]
+	yesterday = log --since='yesterday.midnight' --until='midnight' --all --no-merges --oneline --author=pranav.techiegeek@gmail.com

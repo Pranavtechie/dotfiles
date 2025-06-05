@@ -27,7 +27,6 @@
     configuration = { pkgs, config, ... }: {
       nixpkgs.config.allowUnfree = true;
       nixpkgs.config.allowBroken = true;
-
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
@@ -40,6 +39,7 @@
         uv
         tree
         gh
+        xcbuild
       ];
 
       nix.enable = false;
@@ -51,10 +51,17 @@
 
         brews = [
           "mas"
+          "ffmpeg"
           "nvm"
           "bun"
           "atuin"
           "exiftool"
+          "libpq"
+          "poppler" # for pdf2img to work 
+          "cloudflared"
+          "imagemagick" # for pdf2img to work
+          "graphicsmagick" # for pdf2img to work
+          "ghostscript" # for pdf2img to work
         ];
 
         taps = [
@@ -69,6 +76,7 @@
           "iina"
           "raycast"
           "activitywatch"
+          "google-chrome"
           "zed"
           "maccy"
           "aerospace"
@@ -83,6 +91,11 @@
           "stats"
           "dbeaver-community"
           "postgres-unofficial"
+          "cursor"
+          "discord"
+          "balenaetcher"
+          "superwhisper"
+          "espanso" 
         ];
 
         masApps = {
