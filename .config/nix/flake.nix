@@ -62,6 +62,7 @@
           "imagemagick" # for pdf2img to work
           "graphicsmagick" # for pdf2img to work
           "ghostscript" # for pdf2img to work
+          "btop"
         ];
 
         taps = [

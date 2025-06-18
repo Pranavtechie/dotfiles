@@ -62,6 +62,8 @@
       # Customize Agnoster theme to hide username@hostname
       # Override the prompt_context function to do nothing
       prompt_context() {}
+
+      export PATH="/Users/pranav/.local/bin:$PATH"
     '';
   };
 

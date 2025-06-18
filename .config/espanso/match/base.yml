@@ -12,6 +12,12 @@ matches:
   - trigger: ":espanso"
     replace: "Hi there!"
 
+  - trigger: ":eml"
+    replace: "pranav.techiegeek@gmail.com"
+
+  - trigger: ":wlm"
+    replace: "site:cuemath.com OR site:tutorial.math.lamar.edu OR site:wikipedia.org OR site:khanacademy.org OR site:brilliant.org OR site:mathsisfun.com OR site:mathplanet.com OR site:ck12.org OR site:mathtv.com OR site:purplemath.com OR site:expii.com OR site:ocw.mit.edu OR site:coursera.org OR site:edx.org OR site:mathworld.wolfram.com OR site:artofproblemsolving.com OR site:ams.org/open-math-notes OR site:us.metamath.org OR site:desmos.com OR site:geogebra.org OR site:gizmos.explorelearning.com OR site:math.stackexchange.com OR site:mathoverflow.net"
+
   # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
 
   # But matches can also be dynamic:
