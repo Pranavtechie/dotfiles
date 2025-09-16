@@ -124,8 +124,6 @@ alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 
-# Minimize all windows in the workspace
-cmd-alt-m = 'close-all-windows-but-current'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -139,21 +137,19 @@ alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 
 # Application Hot Keys
-alt-t = 'exec-and-forget open -a /System/Volumes/Data/Applications/Ghostty.app'
-alt-a = 'exec-and-forget open -a /System/Volumes/Data/Applications/Dia.app'
-alt-f = 'exec-and-forget open -a /System/Library/CoreServices/Finder.app'
-alt-o = 'exec-and-forget open -a /nix/store/hkxhg9dj03jh086mciim604fksakczjb-obsidian-1.8.10/Applications/Obsidian.app'
-alt-r = 'exec-and-forget open -a /System/Applications/Reminders.app' 
-alt-z = 'exec-and-forget open -a /System/Volumes/Data/Applications/Zed.app'
-alt-b = 'exec-and-forget open -a /System/Volumes/Data/Applications/Brave\ Browser.app' 
-alt-i = 'exec-and-forget open -a /System/Applications/iPhone Mirroring.app'
-alt-n = 'exec-and-forget open -a /System/Volumes/Data/Applications/NetNewsWire.app'
-alt-w = 'exec-and-forget open -a /System/Volumes/Data/Applications/WhatsApp.app'
-alt-m = 'exec-and-forget open -a /System/Applications/Music.app'
-alt-q = 'exec-and-forget open -a /System/Volumes/Data/Applications/LM\ Studio.app' 
-alt-d = 'exec-and-forget open -a /System/Volumes/Data/Applications/DBeaver.app'
-alt-c = 'exec-and-forget open -a /System/Volumes/Data/Applications/Cursor.app'
-alt-s = 'exec-and-forget open -a /System/Volumes/Data/Applications/Discord.app'
+cmd-alt-t = 'exec-and-forget open -a /System/Volumes/Data/Applications/Ghostty.app'
+cmd-alt-f = 'exec-and-forget open -a /System/Library/CoreServices/Finder.app'
+cmd-alt-o = 'exec-and-forget open -a /nix/store/hkxhg9dj03jh086mciim604fksakczjb-obsidian-1.8.10/Applications/Obsidian.app'
+cmd-alt-r = 'exec-and-forget open -a /System/Applications/Reminders.app' 
+cmd-alt-z = 'exec-and-forget open -a /System/Volumes/Data/Applications/Zed.app'
+cmd-alt-a = 'exec-and-forget open -a /System/Volumes/Data/Applications/Brave\ Browser.app' 
+cmd-alt-n = 'exec-and-forget open -a /System/Volumes/Data/Applications/NetNewsWire.app'
+cmd-alt-w = 'exec-and-forget open -a /System/Volumes/Data/Applications/WhatsApp.app'
+cmd-alt-m = 'exec-and-forget open -a /System/Applications/Music.app'
+cmd-alt-q = 'exec-and-forget open -a /System/Volumes/Data/Applications/LM\ Studio.app' 
+cmd-alt-c = 'exec-and-forget open -a /System/Volumes/Data/Applications/Cursor.app'
+cmd-alt-s = 'exec-and-forget open -a /System/Volumes/Data/Applications/Discord.app'
+cmd-alt-e = 'exec-and-forget open -a /System/Applications/Mail.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'

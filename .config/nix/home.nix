@@ -64,6 +64,10 @@
       prompt_context() {}
 
       export PATH="/Users/pranav/.local/bin:$PATH"
+
+      eval "$(zoxide init zsh)"
+
+      export NU_CONFIG_DIR="$HOME/.config/nushell"
     '';
   };
 

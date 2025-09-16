@@ -40,6 +40,7 @@
         tree
         gh
         xcbuild
+	      nushell
       ];
 
       nix.enable = false;
@@ -53,16 +54,21 @@
           "mas"
           "ffmpeg"
           "nvm"
+          "docker"
           "bun"
           "atuin"
           "exiftool"
           "libpq"
-          "poppler" # for pdf2img to work 
           "cloudflared"
-          "imagemagick" # for pdf2img to work
-          "graphicsmagick" # for pdf2img to work
-          "ghostscript" # for pdf2img to work
           "btop"
+	        "yt-dlp"
+	        "wget"
+	        "git-lfs" 
+	        "zellij"
+	        "helix"
+	        "zoxide"
+	        "fastfetch"
+	        "clingo"
         ];
 
         taps = [
@@ -75,18 +81,19 @@
           "ghostty"
           "the-unarchiver"
           "iina"
+          "utm"
           "raycast"
           "activitywatch"
           "google-chrome"
           "zed"
           "maccy"
+          "orbstack"
           "aerospace"
-          "flux"
+          "flux-app"
           "netnewswire"
           "lm-studio"
           "battery-toolkit"
           "jordanbaird-ice"
-          "brave-browser"
           "karabiner-elements"
           "arc"
           "stats"
@@ -96,7 +103,9 @@
           "discord"
           "balenaetcher"
           "superwhisper"
-          "espanso" 
+          "espanso"
+	        "caffeine"
+	        "obs"
         ];
 
         masApps = {
@@ -134,6 +143,8 @@
         NSGlobalDomain."com.apple.swipescrolldirection" = false;
         NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
       };
+
+      system.primaryUser = username;
       
       # Used for backwards compatibility, please read the changelog before changing.
       # $ darwin-rebuild changelog
