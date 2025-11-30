@@ -54,6 +54,8 @@
           "mas"
           "ffmpeg"
           "nvm"
+          "azure-cli"
+          "qemu"
           "docker"
           "bun"
           "atuin"
@@ -78,10 +80,8 @@
         ];
 
         casks = [
-          "ghostty"
           "the-unarchiver"
           "iina"
-          "utm"
           "raycast"
           "activitywatch"
           "google-chrome"
@@ -103,7 +103,6 @@
           "discord"
           "balenaetcher"
           "superwhisper"
-          "espanso"
 	        "caffeine"
 	        "obs"
         ];

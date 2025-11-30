@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1763961582936,
+	"update": {
+		"latest": "0.2.3",
+		"current": "0.0.14",
+		"type": "minor",
+		"name": "@qwen-code/qwen-code"
+	}
+}
