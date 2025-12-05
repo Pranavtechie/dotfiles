@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# A simple wrapper to run the AppleScript
+osascript -e '
+set appList to {"Maccy", "Ice", "Flux", "Caffeine", "Raycast", "ActivityWatch", "Karabiner-Elements", "AeroSpace", "Superwhisper", "Battery Toolkit", "Stats"}
+
+repeat with appName in appList
+    try
+        tell application appName to quit
+    end try
+end repeat
+'
+
+echo "✅ Quit commands sent."
