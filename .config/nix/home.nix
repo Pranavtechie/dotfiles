@@ -8,8 +8,8 @@
   
   # Set environment variables
   home.sessionVariables = {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
+    EDITOR = "hx";
+    VISUAL = "hx";
   };
 
   # Configure zsh with oh-my-zsh

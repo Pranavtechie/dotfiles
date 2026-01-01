@@ -1,0 +1,92 @@
+# Mole Cleanup Preview - 2025-12-31 07:54:37
+#
+# How to protect files:
+# 1. Copy any path below to ~/.config/mole/whitelist
+# 2. Run: mo clean --whitelist
+#
+# Example:
+#   /Users/*/Library/Caches/com.example.app
+#
+
+
+=== User essentials ===
+/Users/pranav/Library/Caches  # 14.83GB (73 items)
+/Users/pranav/Library/Logs  # 32.9MB (15 items)
+
+=== Finder metadata ===
+
+=== macOS system caches ===
+/Users/pranav/Library/Suggestions  # 67.1MB (19 items)
+
+=== Sandboxed app caches ===
+
+=== Browsers ===
+/Users/pranav/Library/Caches/com.apple.Safari  # 672KB (2 items)
+/Users/pranav/Library/Caches/Google/Chrome  # 3.42GB (12 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 3/GPUCache  # 5.5MB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 14/GPUCache  # 4.5MB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 13/GPUCache  # 545KB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 12/GPUCache  # 5.5MB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 1/GPUCache  # 545KB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 9/GPUCache  # 545KB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 10/GPUCache  # 1.5MB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 7/GPUCache  # 545KB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 6/GPUCache  # 545KB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Default/GPUCache  # 545KB (5 items)
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 15/GPUCache  # 545KB (5 items)
+/Users/pranav/Library/Caches/company.thebrowser.dia  # 141.1MB (5 items)
+/Users/pranav/Library/Caches/BraveSoftware/Brave-Browser/Default  # 1.88GB
+/Users/pranav/Library/Caches/Comet/Default  # 1.42GB
+
+=== Cloud storage ===
+
+=== Office applications ===
+
+=== Developer tools ===
+/Users/pranav/.bun/install/cache  # 980.5MB (1991 items)
+/Users/pranav/.cache/uv  # 16.89GB (9 items)
+/Users/pranav/.cache/torch/hub  # 195.5MB
+/Users/pranav/.azure/logs/telemetry.log  # 4KB
+/Users/pranav/Library/Caches/Google/AndroidStudio2024.3.2  # 170.4MB (8 items)
+/Users/pranav/Library/Caches/deno  # 242KB (7 items)
+/Users/pranav/Library/Caches/SentryCrash  # 60KB (15 items)
+/Users/pranav/Library/Caches/com.crashlytics.data/com.withopal.opalmacos  # 228KB
+/Users/pranav/Library/Caches/Homebrew  # 1.07GB (151 items)
+
+=== Development applications ===
+/Users/pranav/Library/Caches/com.apple.dt.Xcode  # 145KB (3 items)
+/Users/pranav/Library/Developer/Xcode/DerivedData  # 78.0MB (3 items)
+/Users/pranav/Library/Application Support/Code/logs  # 3.5MB (8 items)
+/Users/pranav/Library/Application Support/Code/Cache/Cache_Data  # 127.9MB
+/Users/pranav/Library/Application Support/Code/CachedData  # 99.8MB (9 items)
+/Users/pranav/Library/Application Support/discord/Cache/Cache_Data  # 1.24GB
+/Users/pranav/Library/Caches/us.zoom.xos  # 7.8MB (3 items)
+/Users/pranav/Library/Caches/com.apple.TV  # 1.6MB (5 items)
+/Users/pranav  # 928KB (17 items)
+/Users/pranav/.lesshst  # 1KB
+
+=== Virtual machine tools ===
+
+=== Application Support ===
+
+=== Uninstalled app data ===
+/Users/pranav/Library/Caches/org.swift.swiftpm  # 116KB
+/Users/pranav/Library/Caches/io.sentry  # 12KB
+/Users/pranav/Library/Logs/com.etwok.netspot-setapp  # 4KB
+/Users/pranav/Library/HTTPStorages/com.etwok.netspot-setapp  # 56KB
+/Users/pranav/Library/HTTPStorages/com.google.GoogleUpdater  # 4.0MB
+/Users/pranav/Library/HTTPStorages/com.setapp.DesktopClient.SetappAgent.binarycookies  # 1KB
+/Users/pranav/Library/HTTPStorages/com.wannabespace.conar  # 64KB
+
+=== Apple Silicon updates ===
+
+=== iOS device backups ===
+
+=== Time Machine incomplete backups ===
+
+# ============================================
+# Summary
+# ============================================
+# Potential cleanup: 44.28GB
+# Items: 3316
+# Categories: 40

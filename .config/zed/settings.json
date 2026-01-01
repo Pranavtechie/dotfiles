@@ -8,7 +8,7 @@
       "model": "claude-sonnet-4-thinking"
     }
   },
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "helix_mode": true,
   "ui_font_size": 14,
   "buffer_font_size": 14,
@@ -19,5 +19,5 @@
   },
   "terminal": {
     "font_family": "RecMonoLinear Nerd Font"
-  },
+  }
 }

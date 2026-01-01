@@ -148,7 +148,7 @@ cmd-alt-w = 'exec-and-forget open -a /System/Volumes/Data/Applications/WhatsApp.
 cmd-alt-m = 'exec-and-forget open -a /System/Applications/Music.app'
 cmd-alt-q = 'exec-and-forget open -a /System/Volumes/Data/Applications/LM\ Studio.app' 
 cmd-alt-c = 'exec-and-forget open -a /System/Volumes/Data/Applications/Cursor.app'
-cmd-alt-s = 'exec-and-forget open -a /System/Volumes/Data/Applications/Discord.app'
+cmd-alt-s = 'exec-and-forget open -a /System/Volumes/Data/Applications/legcord.app'
 cmd-alt-e = 'exec-and-forget open -a /System/Applications/Mail.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth

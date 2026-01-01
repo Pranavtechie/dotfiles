@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# List of applications
+APPS=("Maccy" "Ice" "Flux" "Caffeine" "Raycast" "ActivityWatch" "Karabiner-Elements" "AeroSpace" "Superwhisper" "Battery Toolkit" "Stats")
+
+ACTION=$1
+
+if [[ "$ACTION" == "quit" ]]; then
+    # Construct AppleScript list from Bash array
+    # Result looks like: {"App1", "App2"}
+    applescript_list=""
+    for app in "${APPS[@]}"; do
+        applescript_list+="\"$app\", "
+done
+    # Remove trailing comma and space
+    applescript_list="{${applescript_list%, }}"
+
+    osascript -e "
+    set appList to $applescript_list
+    repeat with appName in appList
+        try
+            tell application appName to quit
+        end try
+    end repeat
+    "
+    echo "✅ Quit commands sent."
+
+elif [[ "$ACTION" == "open" ]]; then
+    echo "Opening apps..."
+    for app in "${APPS[@]}"; do
+        # Use 'open -a' to launch applications
+        open -a "$app"
+    done
+    echo "✅ Open commands sent."
+
+else
+    echo "Usage: $(basename "$0") {open|quit}"
+    exit 1
+fi

@@ -33,6 +33,7 @@
         neovim
         mkalias
         obsidian
+        rustup
         tmux
         qbittorrent
         stow
@@ -54,9 +55,7 @@
           "mas"
           "ffmpeg"
           "nvm"
-          "azure-cli"
-          "qemu"
-          "docker"
+          "mole"
           "bun"
           "atuin"
           "exiftool"
@@ -95,12 +94,11 @@
           "battery-toolkit"
           "jordanbaird-ice"
           "karabiner-elements"
-          "arc"
           "stats"
           "dbeaver-community"
           "postgres-unofficial"
           "cursor"
-          "discord"
+          "legcord"
           "balenaetcher"
           "superwhisper"
 	        "caffeine"
