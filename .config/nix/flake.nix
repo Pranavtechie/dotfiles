@@ -86,6 +86,8 @@
           static-only = false;
           show-recents = false; # Don't show recent applications
           orientation = "bottom";
+          persistent-apps = [];
+          persistent-others = [];
         };
         NSGlobalDomain."com.apple.swipescrolldirection" = false;
         NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
