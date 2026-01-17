@@ -3,7 +3,7 @@
 {
   # Home Manager needs information about you
   home.username = username;
-  home.homeDirectory = homeDirectory;
+  home.homeDirectory = lib.mkForce (/. + (lib.removePrefix "/" homeDirectory));
   home.stateVersion = "23.11";
 
   # Set environment variables
