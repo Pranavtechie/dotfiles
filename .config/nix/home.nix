@@ -1,4 +1,4 @@
-{ config, pkgs, lib, username, homeDirectory, ... }:
+{ config, pkgs, lib, username, homeDirectory ? "/Users/${username}", ... }:
 
 {
   # Home Manager needs information about you
