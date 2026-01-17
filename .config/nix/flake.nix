@@ -14,36 +14,16 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
   let
-    # Define system and user variables
     system = "aarch64-darwin";
-    username = "pranav";
-    
-    # Import nixpkgs for the system
-    pkgs = import nixpkgs {
-      inherit system;
-      config.allowUnfree = true;
+
+    hosts = {
+      "Pranavs-MacBook-Pro" = import ./hosts/Pranavs-MacBook-Pro/vars.nix;
+      "Pranavs-Mac-mini" = import ./hosts/Pranavs-Mac-mini/vars.nix;
     };
-    
-    configuration = { pkgs, config, ... }: {
+
+    mkConfiguration = { username }: { pkgs, config, ... }: {
       nixpkgs.config.allowUnfree = true;
       nixpkgs.config.allowBroken = true;
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
-      environment.systemPackages = with pkgs; [
-        neovim
-        mkalias
-        obsidian
-        rustup
-        tmux
-        qbittorrent
-        stow
-        uv
-        tree
-        gh
-        xcbuild
-	      nushell
-      ];
-
       nix.enable = false;
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
@@ -53,23 +33,8 @@
 
         brews = [
           "mas"
-          "ffmpeg"
-          "nvm"
           "mole"
-          "bun"
-          "atuin"
-          "exiftool"
-          "libpq"
-          "cloudflared"
-          "btop"
-	        "yt-dlp"
-	        "wget"
-	        "git-lfs" 
-	        "zellij"
-	        "helix"
-	        "zoxide"
-	        "fastfetch"
-	        "clingo"
+          "libpq" # for psql cli tool
         ];
 
         taps = [
@@ -81,35 +46,24 @@
         casks = [
           "the-unarchiver"
           "iina"
+          "obsidian"
           "raycast"
           "activitywatch"
           "google-chrome"
-          "zed"
           "maccy"
           "orbstack"
+          "ghostty"
           "aerospace"
           "flux-app"
-          "netnewswire"
-          "lm-studio"
-          "battery-toolkit"
-          "jordanbaird-ice"
-          "karabiner-elements"
+          "jordanbaird-ice@beta"
           "stats"
-          "dbeaver-community"
           "postgres-unofficial"
-          "cursor"
-          "legcord"
-          "balenaetcher"
-          "superwhisper"
+          "qbittorrent"
 	        "caffeine"
-	        "obs"
         ];
 
         masApps = {
-          "WhatsApp" = 310633997;
-          "Keynote" = 409183694;
-          "Pages" = 409201541;
-          "Numbers" = 409203825;
+          "Tailscale" = 1475387142;
         };
 
         onActivation.cleanup = "zap";
@@ -129,12 +83,8 @@
         dock = {
           autohide = true;
           mineffect = "scale"; # "scale" for immediate animation instead of "genie"
-          static-only = false; 
+          static-only = false;
           show-recents = false; # Don't show recent applications
-          persistent-apps = [
-            "/nix/store/hkxhg9dj03jh086mciim604fksakczjb-obsidian-1.8.10/Applications/Obsidian.app"
-            "/System/Applications/Reminders.app"
-          ];
           orientation = "bottom";
         };
         NSGlobalDomain."com.apple.swipescrolldirection" = false;
@@ -142,7 +92,7 @@
       };
 
       system.primaryUser = username;
-      
+
       # Used for backwards compatibility, please read the changelog before changing.
       # $ darwin-rebuild changelog
       system.stateVersion = 5;
@@ -150,54 +100,52 @@
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
 
-      system.activationScripts.applications.text = let
-        env = pkgs.buildEnv {
-          name = "system-applications";
-          paths = config.environment.systemPackages;
-          pathsToLink = ["/Applications"];
-        };
-      in
-      pkgs.lib.mkForce ''
-        # Set up applications.
-        echo "setting up /Applications..." >&2
-        rm -rf /Applications/Nix\ Apps
-        mkdir -p /Applications/Nix\ Apps
-        find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
-        while read -r src; do
-          app_name=$(basename "$src")
-          echo "copying $src" >&2
-          ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
-        done
-      '';
     };
+
+    mkDarwin = hostName:
+      let
+        host = hosts.${hostName};
+        username = host.username;
+        homeDirectory = host.homeDirectory;
+        hostDir = ./hosts + "/${hostName}";
+      in
+      nix-darwin.lib.darwinSystem {
+        inherit system;
+        specialArgs = { inherit inputs username homeDirectory hostName; };
+        modules = [
+          (mkConfiguration { inherit username; })
+          (hostDir + "/darwin.nix")
+          nix-homebrew.darwinModules.nix-homebrew
+          {
+            nix-homebrew = {
+              enable = true;
+              user = username;
+              autoMigrate = true;
+            };
+          }
+          # Add home-manager module
+          home-manager.darwinModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit username homeDirectory hostName; };
+              users.${username} = {
+                imports = [
+                  ./home.nix
+                  (hostDir + "/home.nix")
+                ];
+              };
+              backupFileExtension = "backup";
+            };
+          }
+        ];
+      };
   in
   {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#Pranavs-MacBook-Pro
-    darwinConfigurations."Pranavs-MacBook-Pro" = nix-darwin.lib.darwinSystem {
-      inherit system;
-      specialArgs = { inherit inputs username; };
-      modules = [
-        configuration
-        nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            enable = true;
-            user = username;
-            autoMigrate = true;
-          };
-        }
-        # Add home-manager module
-        home-manager.darwinModules.home-manager
-        {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.${username} = import ./home.nix;
-            backupFileExtension = "backup";
-          };
-        }
-      ];
+    darwinConfigurations = {
+      "Pranavs-MacBook-Pro" = mkDarwin "Pranavs-MacBook-Pro";
+      "Pranavs-Mac-mini" = mkDarwin "Pranavs-Mac-mini";
     };
   };
 }

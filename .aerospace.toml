@@ -143,13 +143,15 @@ cmd-alt-o = 'exec-and-forget open -a /nix/store/hkxhg9dj03jh086mciim604fksakczjb
 cmd-alt-r = 'exec-and-forget open -a /System/Applications/Reminders.app' 
 cmd-alt-z = 'exec-and-forget open -a /System/Volumes/Data/Applications/Zed.app'
 cmd-alt-a = 'exec-and-forget open -a /System/Volumes/Data/Applications/Brave\ Browser.app' 
+cmd-alt-v = 'exec-and-forget open -a /System/Volumes/Data/Applications/Comet.app'
+cmd-alt-p = 'exec-and-forget open -a /System/Volumes/Data/Applications/Dia.app'
 cmd-alt-n = 'exec-and-forget open -a /System/Volumes/Data/Applications/NetNewsWire.app'
 cmd-alt-w = 'exec-and-forget open -a /System/Volumes/Data/Applications/WhatsApp.app'
 cmd-alt-m = 'exec-and-forget open -a /System/Applications/Music.app'
-cmd-alt-q = 'exec-and-forget open -a /System/Volumes/Data/Applications/LM\ Studio.app' 
 cmd-alt-c = 'exec-and-forget open -a /System/Volumes/Data/Applications/Cursor.app'
 cmd-alt-s = 'exec-and-forget open -a /System/Volumes/Data/Applications/legcord.app'
 cmd-alt-e = 'exec-and-forget open -a /System/Applications/Mail.app'
+cmd-alt-q = 'exec-and-forget open -a /System/Volumes/Data/Applications/Google\ Chrome.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'

@@ -3,8 +3,10 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Build/Update Commands
-- Apply changes: `darwin-rebuild switch --flake .#Pranavs-MacBook-Pro`
-- Build without applying: `darwin-rebuild build --flake .#Pranavs-MacBook-Pro`
+- Apply changes (MacBook): `darwin-rebuild switch --flake .#Pranavs-MacBook-Pro`
+- Apply changes (Mac mini): `darwin-rebuild switch --flake .#Pranavs-Mac-mini`
+- Build without applying (MacBook): `darwin-rebuild build --flake .#Pranavs-MacBook-Pro`
+- Build without applying (Mac mini): `darwin-rebuild build --flake .#Pranavs-Mac-mini`
 
 ## Code Style Guidelines
 - **Formatting**: Maintain consistent indentation (2 spaces) as shown in existing code
@@ -29,5 +31,5 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **home-manager Flake**: User-specific configuration integrated within the nix-darwin setup
   - Configured as a module within the darwin configuration
   - Manages user environment, dotfiles, and user-specific packages
-  - Uses `home.nix` or similar files to define user environment
+  - Uses `home.nix` plus per-host overrides from `hosts/<hostname>/home.nix`
 - **Proper Integration Flow**: Determinate Systems Nix → nix-darwin → home-manager
