@@ -8,8 +8,8 @@
 
   # Set environment variables
   home.sessionVariables = {
-    EDITOR = "hx";
-    VISUAL = "hx";
+    EDITOR = lib.mkDefault "hx";
+    VISUAL = lib.mkDefault "hx";
     NIX_DARWIN_FLAKE = "$HOME/.config/nix";
     PGUSER = "postgres";
     PGDATABASE = "postgres";
