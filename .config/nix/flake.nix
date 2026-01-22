@@ -47,6 +47,7 @@
           "the-unarchiver"
           "iina"
           "obsidian"
+          "hyperkey"
           "raycast"
           "activitywatch"
           "google-chrome"

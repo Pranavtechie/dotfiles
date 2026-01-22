@@ -13,7 +13,6 @@
       "netnewswire"
       "lm-studio"
       "battery-toolkit"
-      "karabiner-elements"
       "dbeaver-community"
       "cursor"
       "legcord"
