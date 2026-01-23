@@ -47,6 +47,7 @@
           "the-unarchiver"
           "iina"
           "obsidian"
+          "lm-studio"
           "hyperkey"
           "raycast"
           "activitywatch"

@@ -11,7 +11,6 @@
       "comet"
       "thebrowsercompany-dia"
       "netnewswire"
-      "lm-studio"
       "battery-toolkit"
       "dbeaver-community"
       "cursor"
