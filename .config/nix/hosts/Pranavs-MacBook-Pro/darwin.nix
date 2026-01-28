@@ -1,6 +1,11 @@
 { ... }:
 {
   homebrew = {
+
+    brews = [
+      "awscli"
+    ];
+    
     casks = [
       "arduino-ide"
       "brave-browser"
