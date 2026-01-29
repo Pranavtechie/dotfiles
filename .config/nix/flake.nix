@@ -18,7 +18,7 @@
 
     hosts = {
       "Pranavs-MacBook-Pro" = import ./hosts/Pranavs-MacBook-Pro/vars.nix;
-      "Pranavs-Mac-mini" = import ./hosts/Pranavs-Mac-mini/vars.nix;
+      "Pranav-Mandavas-Mac-mini" = import ./hosts/Pranav-Mandavas-Mac-mini/vars.nix;
     };
 
     mkConfiguration = { username }: { pkgs, config, ... }: {
@@ -149,7 +149,7 @@
   {
     darwinConfigurations = {
       "Pranavs-MacBook-Pro" = mkDarwin "Pranavs-MacBook-Pro";
-      "Pranavs-Mac-mini" = mkDarwin "Pranavs-Mac-mini";
+      "Pranav-Mandavas-Mac-mini" = mkDarwin "Pranav-Mandavas-Mac-mini";
     };
   };
 }

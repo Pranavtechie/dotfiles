@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Build/Update Commands
 - Apply changes (MacBook): `darwin-rebuild switch --flake .#Pranavs-MacBook-Pro`
-- Apply changes (Mac mini): `darwin-rebuild switch --flake .#Pranavs-Mac-mini`
+- Apply changes (Mac mini): `darwin-rebuild switch --flake .#Pranav-Mandavas-Mac-mini`
 - Build without applying (MacBook): `darwin-rebuild build --flake .#Pranavs-MacBook-Pro`
-- Build without applying (Mac mini): `darwin-rebuild build --flake .#Pranavs-Mac-mini`
+- Build without applying (Mac mini): `darwin-rebuild build --flake .#Pranav-Mandavas-Mac-mini`
 
 ## Code Style Guidelines
 - **Formatting**: Maintain consistent indentation (2 spaces) as shown in existing code
