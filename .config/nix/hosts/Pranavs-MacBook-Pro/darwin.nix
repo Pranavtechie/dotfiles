@@ -2,10 +2,15 @@
 {
   homebrew = {
 
+    taps = [
+      "mneves75/tap"
+    ];
+
     brews = [
       "awscli"
+      "healthsync"
     ];
-    
+
     casks = [
       "arduino-ide"
       "brave-browser"
