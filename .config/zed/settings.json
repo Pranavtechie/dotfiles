@@ -1,4 +1,12 @@
 {
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    },
+    "factory-droid": {
+      "type": "registry"
+    }
+  },
   "edit_predictions": {
     "mode": "subtle",
   },

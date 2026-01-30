@@ -8,6 +8,7 @@
 
     brews = [
       "awscli"
+      "railway"
       "healthsync"
     ];
 

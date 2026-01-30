@@ -11,6 +11,7 @@
     EDITOR = lib.mkDefault "hx";
     VISUAL = lib.mkDefault "hx";
     NIX_DARWIN_FLAKE = "$HOME/.config/nix";
+    XDG_CONFIG_HOME = "$HOME/.config";
     PGUSER = "postgres";
     PGDATABASE = "postgres";
   };
