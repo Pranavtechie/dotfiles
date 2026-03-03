@@ -143,6 +143,7 @@ cmd-alt-ctrl-shift-o = 'exec-and-forget open -a /System/Volumes/Data/Application
 cmd-alt-ctrl-shift-r = 'exec-and-forget open -a /System/Applications/Reminders.app' 
 cmd-alt-ctrl-shift-slash = 'exec-and-forget open -a /System/Volumes/Data/Applications/Zed.app'
 cmd-alt-ctrl-shift-j = 'exec-and-forget open -a /System/Volumes/Data/Applications/Brave\ Browser.app' 
+cmd-alt-ctrl-shift-h = 'exec-and-forget open -a /System/Volumes/Data/Applications/Element.app'
 cmd-alt-ctrl-shift-v = 'exec-and-forget open -a /System/Volumes/Data/Applications/Comet.app'
 cmd-alt-ctrl-shift-p = 'exec-and-forget open -a /System/Volumes/Data/Applications/Dia.app'
 cmd-alt-ctrl-shift-n = 'exec-and-forget open -a /System/Volumes/Data/Applications/NetNewsWire.app'
@@ -151,7 +152,10 @@ cmd-alt-ctrl-shift-m = 'exec-and-forget open -a /System/Applications/Music.app'
 cmd-alt-ctrl-shift-c = 'exec-and-forget open -a /System/Volumes/Data/Applications/Cursor.app'
 cmd-alt-ctrl-shift-s = 'exec-and-forget open -a /System/Volumes/Data/Applications/legcord.app'
 cmd-alt-ctrl-shift-e = 'exec-and-forget open -a /System/Applications/Mail.app'
+cmd-alt-ctrl-shift-semicolon = 'exec-and-forget open -a /System/Volumes/Data/Applications/Visual\ Studio\ Code.app'
 cmd-alt-ctrl-shift-q = 'exec-and-forget open -a /System/Volumes/Data/Applications/Google\ Chrome.app'
+cmd-alt-ctrl-shift-comma = 'exec-and-forget open -a /System/Volumes/Data/Applications/Codex.app'
+cmd-alt-ctrl-shift-l = 'exec-and-forget open -a /System/Volumes/Data/Applications/Notion.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'

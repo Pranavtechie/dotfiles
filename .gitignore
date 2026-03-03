@@ -1,5 +1,5 @@
 .config/zed/conversations
 .config/zed/prompts
 .config/zed/themes
-
+.wrangler/
 .DS_Store

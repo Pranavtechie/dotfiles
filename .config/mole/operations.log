@@ -1,0 +1,19 @@
+
+# ========== uninstall session started at 2026-02-26 12:31:59 ==========
+[2026-02-26 12:33:50] [uninstall] REMOVED /Users/pranav/Library/Caches/Dia (180.8MB)
+[2026-02-26 12:33:50] [uninstall] REMOVED /Users/pranav/Library/WebKit/company.thebrowser.dia (704KB)
+[2026-02-26 12:33:50] [uninstall] REMOVED /Applications/Zo.app (1.58GB)
+[2026-02-26 12:33:50] [uninstall] REMOVED /Users/pranav/Library/Application Support/Zo (6.1MB)
+[2026-02-26 12:33:50] [uninstall] REMOVED /Users/pranav/Library/Preferences/computer.zo.desktop.plist (4KB)
+[2026-02-26 12:33:56] [uninstall] REMOVED /Applications/Goodnotes.app (1.30GB)
+[2026-02-26 12:33:57] [uninstall] REMOVED /Users/pranav/Library/Containers/com.goodnotesapp.x (903.3MB)
+[2026-02-26 12:33:57] [uninstall] REMOVED /Users/pranav/Library/Application Scripts/com.goodnotesapp.x
+[2026-02-26 12:33:57] [uninstall] REMOVED /Users/pranav/Library/Preferences/com.goodnotesapp.x.plist (4KB)
+[2026-02-26 12:33:57] [uninstall] REMOVED /private/var/db/receipts/com.goodnotesapp.x.bom (1.5MB)
+[2026-02-26 12:33:57] [uninstall] REMOVED /private/var/db/receipts/com.goodnotesapp.x.plist (4KB)
+[2026-02-26 12:33:59] [uninstall] REMOVED /Applications/EXO.app (739.4MB)
+[2026-02-26 12:33:59] [uninstall] REMOVED /Users/pranav/Library/Caches/exolabs.EXO (972KB)
+[2026-02-26 12:33:59] [uninstall] REMOVED /Users/pranav/Library/HTTPStorages/exolabs.EXO (92KB)
+[2026-02-26 12:33:59] [uninstall] REMOVED /Users/pranav/.EXO (3.19GB)
+[2026-02-26 12:33:59] [uninstall] REMOVED /Users/pranav/Library/Preferences/exolabs.EXO.plist (4KB)
+[2026-02-26 12:33:59] [uninstall] REMOVED /Library/Application Support/EXO (4KB)

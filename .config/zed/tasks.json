@@ -1,0 +1,9 @@
+[
+  {
+    "label": "C++ : Build and Run",
+    "command": "g++ $ZED_FILE -o a && ./a",
+    "use_new_terminal": false,
+    "reveal": "always"
+  },
+]
+

@@ -9,7 +9,20 @@
     brews = [
       "awscli"
       "railway"
+      "smartmontools" # For HardDrive Health monitoring
       "healthsync"
+      "clang-format"
+      "cmake"
+      "ninja"
+      "gperf"
+      "python3"
+      "ccache"
+      "stlink" # stm32 - squid 
+      "protobuf" # protobuf protocol - squid
+      "qemu"
+      "dtc"
+      "wget"
+      "libmagic"
     ];
 
     casks = [
@@ -20,7 +33,6 @@
       "zoom"
       "antigravity"
       "comet"
-      "thebrowsercompany-dia"
       "netnewswire"
       "battery-toolkit"
       "dbeaver-community"
@@ -36,7 +48,6 @@
       "Keynote" = 409183694;
       "Pages" = 409201541;
       "Numbers" = 409203825;
-      "Goodnotes" = 1444383602;
       "Xcode" = 497799835;
     };
   };
