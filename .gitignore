@@ -1,5 +1,6 @@
 .config/zed/conversations
 .config/zed/prompts
 .config/zed/themes
+.config/gh/hosts.yml
 .wrangler/
 .DS_Store
