@@ -4,6 +4,7 @@
 
     taps = [
       "mneves75/tap"
+      "steipete/tap"
     ];
 
     brews = [
@@ -41,6 +42,7 @@
       "balenaetcher"
       "superwhisper"
       "obs"
+      "codexbar"
     ];
 
     masApps = {
