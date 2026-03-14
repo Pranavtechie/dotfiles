@@ -3,7 +3,7 @@
   "autoupdate": true,
   "plugin": [
     "opencode-openai-codex-auth",
-    "opencode-antigravity-auth@1.5.1"
+    "opencode-antigravity-auth@1.6.0"
   ],
   "provider": {
     "openai": {

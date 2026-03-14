@@ -1,4 +1,4 @@
-# Mole Cleanup Preview - 2025-12-31 07:54:37
+# Mole Cleanup Preview - 2026-03-09 11:49:09
 #
 # How to protect files:
 # 1. Copy any path below to ~/.config/mole/whitelist
@@ -9,84 +9,137 @@
 #
 
 
+=== System ===
+
 === User essentials ===
-/Users/pranav/Library/Caches  # 14.83GB (73 items)
-/Users/pranav/Library/Logs  # 32.9MB (15 items)
+/Users/pranav/Library/Caches  # 8.84GB, 57 items
+/Users/pranav/Library/Logs  # 15.0MB, 14 items
 
-=== Finder metadata ===
-
-=== macOS system caches ===
-/Users/pranav/Library/Suggestions  # 67.1MB (19 items)
-
-=== Sandboxed app caches ===
+=== App caches ===
+/Users/pranav/Library/Suggestions  # 92.9MB, 19 items
+/Users/pranav/Library/Application Support/com.apple.wallpaper/aerials/videos  # 3.24GB, 12 items
+/Users/pranav/Library/Messages/Caches/Previews/Attachments  # 23.0MB, 46 items
 
 === Browsers ===
-/Users/pranav/Library/Caches/com.apple.Safari  # 672KB (2 items)
-/Users/pranav/Library/Caches/Google/Chrome  # 3.42GB (12 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 3/GPUCache  # 5.5MB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 14/GPUCache  # 4.5MB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 13/GPUCache  # 545KB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 12/GPUCache  # 5.5MB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 1/GPUCache  # 545KB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 9/GPUCache  # 545KB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 10/GPUCache  # 1.5MB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 7/GPUCache  # 545KB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 6/GPUCache  # 545KB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Default/GPUCache  # 545KB (5 items)
-/Users/pranav/Library/Application Support/Google/Chrome/Profile 15/GPUCache  # 545KB (5 items)
-/Users/pranav/Library/Caches/company.thebrowser.dia  # 141.1MB (5 items)
-/Users/pranav/Library/Caches/BraveSoftware/Brave-Browser/Default  # 1.88GB
-/Users/pranav/Library/Caches/Comet/Default  # 1.42GB
+/Users/pranav/Library/Caches/com.apple.Safari  # 238KB, 2 items
+/Users/pranav/Library/Caches/Google/Chrome  # 642.0MB, 3 items
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 3/GPUCache  # 558KB, 5 items
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 12/GPUCache  # 5.8MB, 5 items
+/Users/pranav/Library/Application Support/Google/Chrome/Profile 9/GPUCache  # 4.8MB, 5 items
+/Users/pranav/Library/Application Support/Google/Chrome/component_crx_cache  # 290.0MB, 23 items
+/Users/pranav/Library/Application Support/Google/GoogleUpdater/crx_cache  # 716.0MB, 3 items
+/Users/pranav/Library/Application Support/Google/GoogleUpdater  # 2.1MB, 2 items
+/Users/pranav/Library/Caches/BraveSoftware/Brave-Browser/Default  # 2.19GB
+/Users/pranav/Library/Caches/Comet/Default  # 30.7MB
 
-=== Cloud storage ===
-
-=== Office applications ===
+=== Cloud & Office ===
 
 === Developer tools ===
-/Users/pranav/.bun/install/cache  # 980.5MB (1991 items)
-/Users/pranav/.cache/uv  # 16.89GB (9 items)
-/Users/pranav/.cache/torch/hub  # 195.5MB
-/Users/pranav/.azure/logs/telemetry.log  # 4KB
-/Users/pranav/Library/Caches/Google/AndroidStudio2024.3.2  # 170.4MB (8 items)
-/Users/pranav/Library/Caches/deno  # 242KB (7 items)
-/Users/pranav/Library/Caches/SentryCrash  # 60KB (15 items)
-/Users/pranav/Library/Caches/com.crashlytics.data/com.withopal.opalmacos  # 228KB
-/Users/pranav/Library/Caches/Homebrew  # 1.07GB (151 items)
+/Users/pranav/.npm/_cacache  # 919.8MB, 2 items
+/Users/pranav/.npm/_npx  # 527.4MB, 17 items
+/Users/pranav/.npm/_logs  # 34KB, 20 items
+/Users/pranav/.npm/_prebuilds  # 4.8MB, 6 items
+/Users/pranav/.bun/install/cache  # 6.48GB, 3956 items
+/Users/pranav/.cache/uv  # 2.50GB, 10 items
+/Users/pranav/ASU/SDSL/Spring-2026-GSW/gsw/__pycache__/main.cpython-312.pyc  # 1KB
+/Users/pranav/ASU/SDSL/Spring-2026-GSW/gsw/src/__pycache__  # 59KB, 11 items
+/Users/pranav/ASU/SDSL/drive_notion_migration/__pycache__/prepare_zip.cpython-313.pyc  # 9KB
+/Users/pranav/ASU/SDSL/squidsat/eps/__pycache__/monitor.cpython-314.pyc  # 9KB
+/Users/pranav/ASU/SDSL/squidsat/eps/build/nanopb/generator/proto/__pycache__  # 11KB, 2 items
+/Users/pranav/ASU/SDSL/squidsat/eps/build_node_a/nanopb/generator/__pycache__/nanopb_generator.cpython-314.pyc  # 156KB
+/Users/pranav/ASU/SDSL/squidsat/eps/build_node_a/nanopb/generator/proto/__pycache__  # 15KB, 3 items
+/Users/pranav/ASU/SDSL/squidsat/eps/build_node_b/nanopb/generator/__pycache__/nanopb_generator.cpython-314.pyc  # 156KB
+/Users/pranav/ASU/SDSL/squidsat/eps/build_node_b/nanopb/generator/proto/__pycache__  # 15KB, 3 items
+/Users/pranav/ASU/SDSL/squidsat/eps/build_node_c/nanopb/generator/__pycache__/nanopb_generator.cpython-314.pyc  # 156KB
+/Users/pranav/ASU/SDSL/squidsat/eps/build_node_c/nanopb/generator/proto/__pycache__  # 15KB, 3 items
+/Users/pranav/ASU/SDSL/squidsat/eps/modules/lib/nanopb/generator/proto/__pycache__  # 11KB, 2 items
+/Users/pranav/ASU/SDSL/squidsat/eps/zephyr/scripts/__pycache__  # 117KB, 4 items
+/Users/pranav/ASU/SDSL/squidsat/eps/zephyr/scripts/build/__pycache__  # 32KB, 2 items
+/Users/pranav/ASU/SDSL/squidsat/eps/zephyr/scripts/dts/__pycache__  # 4KB, 2 items
+/Users/pranav/ASU/SDSL/squidsat/eps/zephyr/scripts/kconfig/__pycache__  # 574KB, 4 items
+/Users/pranav/ASU/SDSL/squidsat/eps/zephyr/scripts/pylib/build_helpers/__pycache__  # 12KB, 2 items
+/Users/pranav/ASU/SDSL/squidsat/eps/zephyr/scripts/west_commands/__pycache__  # 216KB, 12 items
+/Users/pranav/ASU/SDSL/squidsat/eps/zephyr/scripts/west_commands/runners/__pycache__  # 957KB, 96 items
+/Users/pranav/ASU/spring-2026/CSE511/assignment2-docker/__pycache__  # 23KB, 2 items
+/Users/pranav/ASU/spring-2026/CSE546/CSE546-SPRING-2026/__pycache__  # 55KB, 5 items
+/Users/pranav/ASU/spring-2026/CSE546/project-1-part-1/web-tier-pranav-stuff/__pycache__/server.cpython-312.pyc  # 1KB
+/Users/pranav/programming/gpu-buster/__pycache__/train_resnet.cpython-313.pyc  # 15KB
+/Users/pranav/programming/mom-kcc/attendance-system/reference/kcc-attendance/scripts/__pycache__  # 23KB, 4 items
+/Users/pranav/programming/mom-kcc/attendance-system/reference/kcc-attendance/src/__pycache__  # 85KB, 21 items
+/Users/pranav/programming/mom-kcc/attendance-system/src/__pycache__  # 23KB, 12 items
+/Users/pranav/programming/mom-kcc/attendance-system/src/api/__pycache__  # 42KB, 7 items
+/Users/pranav/programming/mom-kcc/attendance-system/src/core/__pycache__  # 31KB, 4 items
+/Users/pranav/programming/mom-kcc/attendance-system/src/ipc/__pycache__  # 42KB, 6 items
+/Users/pranav/programming/mom-kcc/attendance-system/src/scripts/__pycache__/bulk_import_people.cpython-312.pyc  # 9KB
+/Users/pranav/programming/mom-kcc/attendance-system/src/ui/__pycache__  # 35KB, 4 items
+/Users/pranav/.expo/expo-go  # 178.8MB, 2 items
+/Users/pranav/.expo/android-apk-cache/Exponent-2.33.20.apk  # 178.8MB
+/Users/pranav/.expo/native-modules-cache  # 25KB, 2 items
+/Users/pranav/.expo/schema-cache  # 67KB, 2 items
+/Users/pranav/.expo/versions-cache  # 33KB, 2 items
+/Users/pranav/Library/Caches/deno  # 388KB, 10 items
+/Users/pranav/Library/Caches/SentryCrash  # 20KB, 5 items
+/Users/pranav/Library/Application Support/Antigravity/Cache/Cache_Data  # 786KB
+/Users/pranav/Library/Application Support/Antigravity/Code Cache  # 16KB, 2 items
+/Users/pranav/Library/Application Support/Antigravity/GPUCache  # 5.8MB, 5 items
+/Users/pranav/Library/Application Support/Antigravity/DawnGraphiteCache  # 558KB, 5 items
+/Users/pranav/Library/Application Support/Antigravity/DawnWebGPUCache  # 558KB, 5 items
+/Users/pranav/Library/Application Support/Claude/Cache  # 152.1MB, 2 items
+/Users/pranav/Library/Application Support/Claude/Code Cache  # 29.2MB, 2 items
+/Users/pranav/Library/Application Support/Claude/GPUCache  # 558KB, 5 items
+/Users/pranav/Library/Application Support/Claude/DawnGraphiteCache  # 558KB, 5 items
+/Users/pranav/Library/Application Support/Claude/DawnWebGPUCache  # 558KB, 5 items
+/Users/pranav/Library/Caches/com.apple.dt.Xcode  # 1.2MB, 4 items
+/Users/pranav/Library/Logs/CoreSimulator  # 179KB, 3 items
+/Users/pranav/Library/Developer/Xcode/Products/com.codedamn  # 127KB
+/Users/pranav/Library/Developer/Xcode/DerivedData  # 215.9MB, 3 items
+/Users/pranav/Library/Application Support/Code/logs  # 11.7MB, 10 items
+/Users/pranav/Library/Application Support/Code/Cache  # 186.9MB, 2 items
+/Users/pranav/Library/Application Support/Code/CachedData  # 127.9MB, 7 items
+/Users/pranav/Library/Caches/Homebrew  # 1.35GB, 130 items
 
-=== Development applications ===
-/Users/pranav/Library/Caches/com.apple.dt.Xcode  # 145KB (3 items)
-/Users/pranav/Library/Developer/Xcode/DerivedData  # 78.0MB (3 items)
-/Users/pranav/Library/Application Support/Code/logs  # 3.5MB (8 items)
-/Users/pranav/Library/Application Support/Code/Cache/Cache_Data  # 127.9MB
-/Users/pranav/Library/Application Support/Code/CachedData  # 99.8MB (9 items)
-/Users/pranav/Library/Application Support/discord/Cache/Cache_Data  # 1.24GB
-/Users/pranav/Library/Caches/us.zoom.xos  # 7.8MB (3 items)
-/Users/pranav/Library/Caches/com.apple.TV  # 1.6MB (5 items)
-/Users/pranav  # 928KB (17 items)
-/Users/pranav/.lesshst  # 1KB
+=== Applications ===
+/Users/pranav/Library/Caches/com.apple.dt.Xcode  # 1.2MB, 4 items
+/Users/pranav/Library/Logs/CoreSimulator  # 179KB, 3 items
+/Users/pranav/Library/Developer/Xcode/Products/com.codedamn  # 127KB
+/Users/pranav/Library/Developer/Xcode/DerivedData  # 215.9MB, 3 items
+/Users/pranav/Library/Application Support/Code/logs  # 11.7MB, 10 items
+/Users/pranav/Library/Application Support/Code/Cache  # 186.9MB, 2 items
+/Users/pranav/Library/Application Support/Code/CachedData  # 127.9MB, 7 items
+/Users/pranav/Library/Application Support/legcord/Cache  # 983.8MB, 2 items
+/Users/pranav/Library/Caches/us.zoom.xos/WebKit  # 78KB
+/Users/pranav/Library/Caches/ru.keepcoder.Telegram  # 2.1MB, 4 items
+/Users/pranav/Library/Caches/com.anthropic.claudefordesktop  # 268KB, 3 items
+/Users/pranav/Library/Logs/Claude  # 1.9MB, 11 items
+/Users/pranav/Library/Caches/com.apple.TV  # 10.8MB, 6 items
+/Users/pranav  # 371KB, 4 items
+/Users/pranav/.wget-hsts  # 1KB
+/Users/pranav/Library/Caches/notion.id  # 82KB, 2 items
 
-=== Virtual machine tools ===
+=== Virtualization ===
 
 === Application Support ===
 
-=== Uninstalled app data ===
-/Users/pranav/Library/Caches/org.swift.swiftpm  # 116KB
-/Users/pranav/Library/Caches/io.sentry  # 12KB
-/Users/pranav/Library/Logs/com.etwok.netspot-setapp  # 4KB
-/Users/pranav/Library/HTTPStorages/com.etwok.netspot-setapp  # 56KB
-/Users/pranav/Library/HTTPStorages/com.google.GoogleUpdater  # 4.0MB
-/Users/pranav/Library/HTTPStorages/com.setapp.DesktopClient.SetappAgent.binarycookies  # 1KB
-/Users/pranav/Library/HTTPStorages/com.wannabespace.conar  # 64KB
+=== Orphaned data ===
+/Users/pranav/Library/Caches/org.swift.swiftpm  # 176KB
+/Users/pranav/Library/Caches/io.sentry  # 8KB
+/Users/pranav/Library/HTTPStorages/com.Respondus.LockDownBrowser.binarycookies  # 1KB
 
 === Apple Silicon updates ===
 
-=== iOS device backups ===
+=== Device backups ===
 
-=== Time Machine incomplete backups ===
+=== Time Machine ===
+
+=== Large files ===
+
+=== System Data clues ===
+
+=== Project artifacts ===
 
 # ============================================
 # Summary
 # ============================================
-# Potential cleanup: 44.28GB
-# Items: 3316
-# Categories: 40
+# Potential cleanup: 30.74GB
+# Items: 6051
+# Categories: 99

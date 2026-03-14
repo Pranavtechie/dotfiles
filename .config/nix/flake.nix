@@ -59,7 +59,7 @@
           "flux-app"
           "jordanbaird-ice@beta"
           "stats"
-          "postgres-unofficial"
+          "postgres-app"
           "qbittorrent"
 	        "caffeine"
         ];
