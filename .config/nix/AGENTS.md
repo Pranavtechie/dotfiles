@@ -5,6 +5,7 @@
   2. Refresh the flake inputs in this repo: `nix flake update`
   3. Optionally pre-build the target host to catch evaluation/build issues early: `darwin-rebuild build --flake .#<host>`
   4. Apply the updated Darwin configuration: `darwin-rebuild switch --flake .#<host>`
+  5. Clean up old generations and optimize the store: `nix-collect-garbage -d && nix store optimise`
 - Replace `<host>` with `Pranavs-MacBook-Pro` or `Pranavs-Mac-mini`.
 
 > [!NOTE]
@@ -17,6 +18,7 @@
 - Apply changes (Mac mini): `darwin-rebuild switch --flake .#Pranavs-Mac-mini`
 - Build without applying (MacBook): `darwin-rebuild build --flake .#Pranavs-MacBook-Pro`
 - Build without applying (Mac mini): `darwin-rebuild build --flake .#Pranavs-Mac-mini`
+- Clean old generations and optimize the store: `nix-collect-garbage -d && nix store optimise`
 
 ## Code Style Guidelines
 - **Formatting**: Maintain consistent indentation (2 spaces) as shown in existing code
