@@ -43,6 +43,7 @@
       "superwhisper"
       "obs"
       "codexbar"
+      "monitorcontrol"
     ];
 
     masApps = {

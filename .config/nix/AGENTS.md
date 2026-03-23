@@ -1,6 +1,16 @@
-# CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## Update Workflow
+- Use this sequence when updating the local Nix toolchain and this flake:
+  1. Upgrade Determinate Nix first: `sudo determinate-nixd upgrade`
+  2. Refresh the flake inputs in this repo: `nix flake update`
+  3. Optionally pre-build the target host to catch evaluation/build issues early: `darwin-rebuild build --flake .#<host>`
+  4. Apply the updated Darwin configuration: `darwin-rebuild switch --flake .#<host>`
+- Replace `<host>` with `Pranavs-MacBook-Pro` or `Pranavs-Mac-mini`.
+
+> [!NOTE]
+> `darwin-rebuild switch` already performs the build before activating the new generation, so `darwin-rebuild build` is not required for the normal update flow.
+>
+> In this repo, `build` is only a preflight check. It can catch evaluation or derivation failures early, but it does not validate activation-time steps. That matters here because Homebrew updates and app installs run during activation, so a successful `build` does not guarantee that `switch` will complete without issues.
 
 ## Build/Update Commands
 - Apply changes (MacBook): `darwin-rebuild switch --flake .#Pranavs-MacBook-Pro`
