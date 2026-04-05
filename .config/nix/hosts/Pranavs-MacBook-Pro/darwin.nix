@@ -9,6 +9,7 @@
 
     brews = [
       "awscli"
+      "deno"
       "railway"
       "smartmontools" # For HardDrive Health monitoring
       "healthsync"
@@ -28,6 +29,7 @@
 
     casks = [
       "arduino-ide"
+      "utm"
       "brave-browser"
       "zed"
       "visual-studio-code"
@@ -48,9 +50,9 @@
 
     masApps = {
       "WhatsApp" = 310633997;
-      "Keynote" = 409183694;
-      "Pages" = 409201541;
-      "Numbers" = 409203825;
+      "Keynote" = 361285480;
+      "Pages" = 361309726;
+      "Numbers" = 361304891;
       "Xcode" = 497799835;
     };
   };

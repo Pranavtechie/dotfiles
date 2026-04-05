@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of applications
-APPS=("Maccy" "Ice" "Flux" "Caffeine" "Raycast" "ActivityWatch" "Karabiner-Elements" "AeroSpace" "Superwhisper" "Battery Toolkit" "Stats")
+APPS=("Maccy" "Ice" "Flux" "Caffeine" "Raycast" "ActivityWatch" "Codexbar" "AeroSpace" "Superwhisper" "Battery Toolkit" "Stats" "HyperKey")
 
 ACTION=$1
 
