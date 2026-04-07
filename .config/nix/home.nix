@@ -76,6 +76,10 @@
     };
   };
 
+  # Home Manager's generated manual currently leaks raw nixpkgs store paths
+  # into options.json, which triggers a string-context warning during builds.
+  manual.manpages.enable = false;
+
   # Let Home Manager install and manage itself
   programs.home-manager.enable = true;
 }

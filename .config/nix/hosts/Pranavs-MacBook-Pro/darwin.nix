@@ -35,7 +35,6 @@
       "visual-studio-code"
       "zoom"
       "antigravity"
-      "comet"
       "netnewswire"
       "battery-toolkit"
       "dbeaver-community"
@@ -43,7 +42,6 @@
       "legcord"
       "balenaetcher"
       "superwhisper"
-      "obs"
       "codexbar"
       "monitorcontrol"
     ];

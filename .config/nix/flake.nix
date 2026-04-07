@@ -30,6 +30,10 @@
 
       homebrew = {
         enable = true;
+        # Keep self-updating casks like Obsidian, Raycast, Chrome, Zed, and
+        # Cursor on the latest installer instead of leaving their app bundles
+        # stale while the apps update themselves internally.
+        greedyCasks = true;
 
         brews = [
           "mas"
